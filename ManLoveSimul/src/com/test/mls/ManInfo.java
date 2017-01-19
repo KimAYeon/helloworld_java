@@ -1,6 +1,6 @@
 package com.test.mls;
 
-class ManInfo {
+public abstract class ManInfo {
 	
 	//private static ManInfo singleton = new ManInfo();
 	
@@ -13,22 +13,12 @@ class ManInfo {
 	public ManInfo() {
 		age = 0;
 		scoreMan = new int[5][];
+		for(int i=0; i<5; i++) {
+			scoreMan[i] = new int[4];
+		}	
 		name = home = info = null;
 	}
-
-	private ManInfo(String name, int age, int tall, 
-			String home, String info) {
-		this.name = name;
-		this.age = age;
-		this.home = home;
-		this.info = info;
-	}
-
-	private ManInfo(int[][] scoreMan) {
-		this.scoreMan = scoreMan;
-	}
 	
-
 	// getter, setter
 	public int getAge() {
 		return age;
