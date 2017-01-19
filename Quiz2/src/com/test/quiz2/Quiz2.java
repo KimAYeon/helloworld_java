@@ -11,7 +11,7 @@ public class Quiz2 {
 		
 		Outter: do {
 			
-		System.out.println("");
+		System.out.println(""); 
 		System.out.println("1 ~ 4 안의 숫자를 입력하시오.");
 		System.out.println("종료를 원할 시, 0을 입력하시오.");
 		System.out.print(">> ");
